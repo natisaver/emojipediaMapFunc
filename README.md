@@ -22,3 +22,6 @@ The callbackFn function accepts the following arguments:
 **element**
 >The current element being processed in the array.
 >in this case the element of the array are the javascript objects.
+
+
+other functions: arr.filter, arr.reduce
