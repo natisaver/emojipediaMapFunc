@@ -12,7 +12,7 @@ function Card(props){
     <dd>
       {props.content}
     </dd>
-  </div>
+    </div>
   );
 }
 

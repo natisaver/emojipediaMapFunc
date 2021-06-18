@@ -1,22 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import emojipedia from "../emojipedia"
-
-function createCard(emojipediaObj){
-  return(
-    <Card 
-    // this function maps the js objs, id,emoji,name,meaning to the props
-    key = {emojipediaObj.id}
-    emoji = {emojipediaObj.emoji}
-    title = {emojipediaObj.name}
-    content = {emojipediaObj.meaning}
-  />
-  );
-}
+import emojipedia from "../emojipedia";
 
 function App() {
-
-
   return (
     <div>
       <h1>
@@ -24,9 +10,9 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        {/* the map function loops thru the array and runs a callback func on each element, and returns the result of the callback function  */}
-        {/* , where the input of the callback is the element of the array*/}
-        {emojipedia.map(createCard)};
+        {emojipedia.map(emojiObj=>(
+          <Card key={emojiObj.id} emoji={emojiObj.emoji} title={emojiObj.name} content={emojiObj.meaning} />
+        ))}
       </dl>
     </div>
   );
