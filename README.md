@@ -25,14 +25,15 @@ The callbackFn function accepts the following arguments:
 
 
 Other Functions: u can assign the function to a var then console.log that to see the result.
-filter
+
+**arr.filter**
 ```javascript
 arr.filter(function(num)){
   return num > 10
 } 
 <!-- returns [22,33] -->
 ```
-reduce
+**arr.reduce**
 ```javascript
 arr.reduce(function(accumulator,currentNum){
   return accumulator + currentNum
@@ -41,7 +42,7 @@ arr.reduce(function(accumulator,currentNum){
      currentNum is the sum of each ele each iteration
 -->
 ```
-arr.find, arr.findIndex
+**arr.find, arr.findIndex**
 ```javascript
 arr.find(function(num){
   return num > 10
