@@ -22,7 +22,9 @@ The callbackFn function accepts the following arguments:
 **element**
 >The current element being processed in the array.
 >in this case the element of the array are the javascript objects.
-
+```javascript
+Array.map(x=>x*x)
+```
 
 Other Functions: u can assign the function to a var then console.log that to see the result.
 
