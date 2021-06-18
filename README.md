@@ -24,4 +24,26 @@ The callbackFn function accepts the following arguments:
 >in this case the element of the array are the javascript objects.
 
 
-other functions: arr.filter, arr.reduce
+other functions: 
+filter
+```javascript
+arr.filter(function(num)){
+  return num > 10
+} 
+<!-- returns [22,33] -->
+```
+reduce
+```javascript
+arr.reduce(function(accumulator,currentNum){
+  return accumulator + currentNum
+})
+<!-- accumulator takes on the value of each element in the array
+     currentNum is the sum of each ele each iteration
+-->
+```
+arr.find, arr.findIndex
+```javascript
+arr.find(function(num){
+  
+})
+```
