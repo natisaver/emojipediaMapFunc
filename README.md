@@ -24,7 +24,7 @@ The callbackFn function accepts the following arguments:
 >in this case the element of the array are the javascript objects.
 
 
-other functions: 
+Other Functions: u can assign the function to a var then console.log that to see the result.
 filter
 ```javascript
 arr.filter(function(num)){
@@ -44,6 +44,7 @@ arr.reduce(function(accumulator,currentNum){
 arr.find, arr.findIndex
 ```javascript
 arr.find(function(num){
-  
+  return num > 10
 })
+<!-- gets the first value that fits the condition (or index for findindex) -->
 ```
