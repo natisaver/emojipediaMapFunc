@@ -51,3 +51,13 @@ arr.find(function(num){
 })
 <!-- gets the first value that fits the condition (or index for findindex) -->
 ```
+
+**state arr destructuring**
+import React, { useState } from "react";
+<!-- initial value is set to 10 -->
+const [count, setCount] = setState(10); 
+<!-- set value to 12   -->
+()=>setCount(12);
+<!-- button on click+1 -->
+function plus(){ setCount(count + 1) }
+<button onClick="plus()">
