@@ -53,6 +53,7 @@ arr.find(function(num){
 ```
 
 **state arr destructuring**
+```javascript
 import React, { useState } from "react";
 <!-- initial value is set to 10 -->
 const [count, setCount] = setState(10); 
@@ -61,3 +62,4 @@ const [count, setCount] = setState(10);
 <!-- button on click+1 -->
 function plus(){ setCount(count + 1) }
 <button onClick="plus()">
+```
