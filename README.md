@@ -72,10 +72,10 @@ const [fullname, setFullname] = useState({fname:"", lname:""});
 function handleChange(event){
   const {value, name} = event.target
 ```
-<!--   const currentVal = event.target.value;
-  const currentName = event.target.name; -->
+const currentVal = event.target.value;
+const currentName = event.target.name;
 
-<!-- One can access the prev state of fullname via prevVal, js obj -->
+One can access the prev state of fullname via prevVal, js obj
 ```javascript  
   setFullname((prevVal)=>{
     if (name === "fName"){
