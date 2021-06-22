@@ -85,7 +85,7 @@ function handleChange(event){
 }
 
 return (
-<input name="fName" valueon=fullname.lname Change={handleChange}/>
+<input name="fName" value=fullname.lname onChange={handleChange}/>
 <input name="lName" value=fullname.lname onChange={handleChange}/>
 )
 ```
