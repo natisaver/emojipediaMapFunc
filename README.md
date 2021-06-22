@@ -63,6 +63,10 @@ const [count, setCount] = setState(10);
 function plus(){ setCount(count + 1) }
 <button onClick="plus()">
 ```
+state can be arr too
+```javascript
+[arr, setArr] = useState([])
+```
 
 **SetState previous value**
 ```javascript
