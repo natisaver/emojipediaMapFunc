@@ -81,11 +81,12 @@ function handleChange(event){
     }
     else {return({fname:prevVal.fname, lname:value});}
   });
-  
+
+  return (
+  <input name="fName" value=fullname.lname onChange={handleChange}/>
+  <input name="lName" value=fullname.lname onChange={handleChange}/>
+  );
+
 }
 
-return (
-<input name="fName" value=fullname.lname onChange={handleChange}/>
-<input name="lName" value=fullname.lname onChange={handleChange}/>
-)
 ```
