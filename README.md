@@ -63,3 +63,29 @@ const [count, setCount] = setState(10);
 function plus(){ setCount(count + 1) }
 <button onClick="plus()">
 ```
+
+**SetState previous value**
+```javascript
+import React, { useState } from "react";
+const [fullname, setFullname] = useState({fname:"", lname:""});
+
+function handleChange(event){
+  const {value, name} = event.target
+<!--   const currentVal = event.target.value;
+  const currentName = event.target.name; -->
+  
+<!-- One can access the prev state of fullname, js obj -->
+  setFullname((prevVal)=>{
+    if (name === "fName"){
+      return({fname:value, lname:prevVal.lname});
+    }
+    else {return({fname:prevVal.fname, lname:value});}
+  });
+  
+}
+
+return (
+<input name"fName" onChange={handleChange}/>
+<input name"lName" onChange={handleChange}/>
+)
+```
